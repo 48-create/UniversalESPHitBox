@@ -9,18 +9,18 @@ local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 
 local Window = Rayfield:CreateWindow({
-    Name = "Fortblox Hub",
-    LoadingTitle = "Loading Fortblox...",
-    LoadingSubtitle = "by Blackwatch",
+    Name = "GiG Hitbox",
+    LoadingTitle = "Loading GiG...",
+    LoadingSubtitle = "by MK",
     ConfigurationSaving = {
         Enabled = true,
-        FolderName = "Fortblox",
+        FolderName = "GiG Hitbox",
         FileName = "Settings"
     },
 })
 
--- ==================== FORTBLOX TAB ====================
-local Fortblox = Window:CreateTab("Fortblox 🔥")
+-- ==================== GiG Hitbox ====================
+local Fortblox = Window:CreateTab("GiG Hitbox 🔥")
 
 _G.HeadSize = 10
 
@@ -32,7 +32,7 @@ Fortblox:CreateToggle({
     end
 })
 
-Fortblox:CreateSlider({
+GiG Hitbox:CreateSlider({
     Name = "Hitbox Größe (1 - 1000)",
     Range = {1, 1000},
     Increment = 1,
@@ -40,7 +40,7 @@ Fortblox:CreateSlider({
     Callback = function(Value) _G.HeadSize = Value end
 })
 
-Fortblox:CreateToggle({
+GiG Hitbox:CreateToggle({
     Name = "Anti Fall",
     CurrentValue = false,
     Callback = function(Value)
@@ -65,7 +65,7 @@ Fortblox:CreateToggle({
     end
 })
 
-Fortblox:CreateToggle({
+GiG Hitbox:CreateToggle({
     Name = "Infinite Jump",
     CurrentValue = false,
     Callback = function(Value)
@@ -78,12 +78,12 @@ Fortblox:CreateToggle({
     end
 })
 
-Fortblox:CreateButton({Name = "Anti Spawn", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/VwZEwsmu'))() end})
-Fortblox:CreateButton({Name = "Anti Lag", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/A5qCVHJt'))() end})
-Fortblox:CreateButton({Name = "Speed Boost", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/xxsjQVVy"))() end})
-Fortblox:CreateButton({Name = "Jump Boost", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/JfCDcYFs"))() end})
-Fortblox:CreateButton({Name = "Fly Toggle", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/YvKv4AuY'))() end})
-Fortblox:CreateButton({Name = "Nameless Admin", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))() end})
+GiG Hitbox:CreateButton({Name = "Anti Spawn", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/VwZEwsmu'))() end})
+GiG Hitbox:CreateButton({Name = "Anti Lag", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/A5qCVHJt'))() end})
+GiG Hitbox:CreateButton({Name = "Speed Boost", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/xxsjQVVy"))() end})
+GiG Hitbox:CreateButton({Name = "Jump Boost", Callback = function() loadstring(game:HttpGet("https://pastebin.com/raw/JfCDcYFs"))() end})
+GiG Hitbox:CreateButton({Name = "Fly Toggle", Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/YvKv4AuY'))() end})
+GiG Hitbox:CreateButton({Name = "Nameless Admin", Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))() end})
 
 -- ==================== ESP TAB ====================
 -- SERVICES
